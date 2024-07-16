@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
                 if (controllerMode == ControllerMode.Default || controllerMode == ControllerMode.Alter) {
                     ProgressBar vHorizontal = findViewById(R.id.progressBarAcc);
                     ProgressBar vVertical = findViewById(R.id.progressBarSteer);
-                    float progressHorizontal = (serviceMotion.readRoll() + 90.0f) / 180.0f * 100.0f;
-                    float progressVertical = (180.0f - serviceMotion.readPitch()) / 360.0f * 100.0f;
+                    float progressHorizontal = (serviceMotion.readRoll() + 180.0f) / 450.0f * 100.0f;
+                    float progressVertical = (450.0f - serviceMotion.readPitch()) / 900.0f * 100.0f;
                     vHorizontal.setProgress((int) progressHorizontal);
                     vVertical.setProgress((int) progressVertical);
                 }
